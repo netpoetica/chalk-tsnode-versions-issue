@@ -1,0 +1,18 @@
+{
+  "name": "chalk-version-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "export TS_NODE_FAST=true; export LOG_LEVEL=error; mocha $(find ./test -name '*.spec.ts*') --recursive --timeout 20s --slow 3s --compilers ts:ts-node/register --compilers ts:ts-node/register,tsx:ts-node/register"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "4.1.2",
+    "elasticsearch": "^14.0.0",
+    "mocha": "3.3.0",
+    "ts-node": "^3.3.0",
+    "typescript": "2.5.3"
+  }
+}
