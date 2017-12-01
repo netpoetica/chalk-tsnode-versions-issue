@@ -2,12 +2,7 @@ import * as chai from 'chai';
 
 const expect = chai.expect;
 
-import { Client } from 'elasticsearch';
-
-const client = new Client({
-	host: '',
-	log: ['error', 'trace']
-});
+import { client } from '../src/app';
 
 describe('Test', () => {
 	it('nested', () => {
